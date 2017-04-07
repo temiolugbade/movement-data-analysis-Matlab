@@ -16,7 +16,7 @@ function [changepointTime, changepointAmpDiff] = changepoint(signal, winSize, wi
 % ----------
 % Marple-Horvat and Gilbey (1992) 
 % A method for automatic identification of periods of muscular activity from EMG recordings. 
-% Journal of Neuroscience Methods 42(3), pp. 163–167.
+% Journal of Neuroscience Methods 42(3), pp. 163â€“167.
 %
 % Olugbade et al. (2014)
 % Bi-Modal Detection of Painful Reaching for Chronic Pain Rehabilitation Systems. 
@@ -29,10 +29,11 @@ function [changepointTime, changepointAmpDiff] = changepoint(signal, winSize, wi
 % Available at: http://www.emo-pain.ac.uk/papers/ACII2015.pdf.
 % 
 %
-% Input -- signal [class = 'double'] 
-%          winSize [class = 'double'] - the size of the sliding windows
+% Input -- signal [class = 'double'] - a vector
+%          winSize [class = 'double'] - the size of the sliding windows, a
+%           scalar
 %          winGap [class = 'double'] - the size of the gap between the
-%           sliding windows. Use winGap = 0 if you don't want a gap.
+%           sliding windows, a scalar. Use winGap = 0 if you don't want a gap.
 %          changeDirection [class = 'double'] - '-1' for low to high
 %           amplitude change, '1' for high to low, and '0' if you don't care about the direction. 
 %           The default is '0'.

@@ -12,7 +12,7 @@ function plot_phaseportrait(angProfile)
 % ----------
 % Winstein and Garfinkel (1989)
 % Qualitative dynamics of disordered human locomotion: a preliminary investigation. 
-% Journal of motor behavior 21(4), pp.373–91. 
+% Journal of motor behavior 21(4), pp.373â€“91. 
 % Available at: http://www.ncbi.nlm.nih.gov/pubmed/15136252.
 %
 % Input -- angProfile [class = 'double'] - a vector
@@ -71,3 +71,4 @@ function plot_phaseportrait(angProfile)
         title({'Phase Portrait'; ...
             'movement start (first 10%) in {\color{green}green} and movement end (last 10%) in {\color{red}red}'})
 
+end%end of function

@@ -12,7 +12,7 @@ function [numCusps, cuspsInd] = cusps_phaseportrait(angProfile, winSize, angDiff
 % ----------
 % Winstein and Garfinkel (1989)
 % Qualitative dynamics of disordered human locomotion: a preliminary investigation. 
-% Journal of motor behavior 21(4), pp.373–91. 
+% Journal of motor behavior 21(4), pp.373â€“91. 
 % Available at: http://www.ncbi.nlm.nih.gov/pubmed/15136252.
 %
 % Input -- angProfile [class = 'double'] - a vector
@@ -134,7 +134,7 @@ function cuspOrNot = iscusp(signalWinAngVelAxis, signalWinAngleAxis, angDiffThre
 
     end
 
-    if(max(angularVelSize) ~= min(angleSize))
+    if(max(angularVelSize) ~= max(angleSize))
         disp('Error thrown by ''iscusp'': ')
         disp('All angular velocities must have corresponding angles.');
         cuspOrNot = -1;

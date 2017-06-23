@@ -193,9 +193,7 @@ function cuspOrNot = iscusp(signalWinAngVelAxis, signalWinAngleAxis, angDiffThre
         %in this version)
         %wideness is defined by angDiffThreshold
         
-        if(cuspOrNot==0 &&...
-            (islinear(signalWinAngVelAxis(1:winMidPoint)) && islinear(signalWinAngVelAxis(winMidPoint:end)))&&...
-            islinear(signalWinAngleAxis))
+        if(cuspOrNot==0 && islinear(signalWinAngleAxis))
 
             cuspOrNot = iscusp_basic(signalWinAngVelAxis([1, winMidPoint, end]))==expectedCuspDirection;
             cuspOrNot = cuspOrNot && (range(signalWinAngleAxis)<=angDiffThreshold);

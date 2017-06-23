@@ -156,9 +156,9 @@ function cuspOrNot = iscusp(signalWinAngVelAxis, signalWinAngleAxis, angDiffThre
 
     %check if potential cusp should be up-pointing or down-pointing
     if(signalWinAngVelAxis(winMidPoint) < 0)
-        expectedCuspDirection = -1;
-    elseif(signalWinAngVelAxis(winMidPoint) > 0)
         expectedCuspDirection = 1;
+    elseif(signalWinAngVelAxis(winMidPoint) > 0)
+        expectedCuspDirection = -1;
     else
         
         return
